@@ -90,7 +90,7 @@ img{
   color: #d9d9d9;
   border: solid #d9d9d9;
   border-radius: 1rem;
-
+  overflow: hidden;
 }
 
 .programming-card .title{
