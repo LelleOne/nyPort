@@ -1,6 +1,6 @@
 // Function to create a programming language object
 function createProgrammingObject(title, img, description, tag, link) {
-  return { title, img, description, tag };
+  return { title, img, description, tag, link };
 }
 
 // Example objects
@@ -27,7 +27,8 @@ const programmingObjects = [
     "Minecraft Shop",
     "src/images/blockEstate.jpg",
     "A shoping site for minecraft blueprints made with c# mvc .NET core.",
-    "C#"
+    "C#",
+    "https://infomedia.orebro.se/xlihag29/BlockShop/"
   )
 ];
 
@@ -37,6 +38,11 @@ function displayProgrammingObjects(objects) {
   container.className = 'programming-container';
 
   objects.forEach(obj => {
+
+    const link = document.createElement('a');
+    link.href = obj.link;
+    link.className = "link"
+
     const card = document.createElement('div');
     card.className = 'programming-card';
 
@@ -59,12 +65,13 @@ function displayProgrammingObjects(objects) {
     description.className = 'description';
     tag.className = 'tag';
 
+    link.appendChild(card);
     card.appendChild(title);
     card.appendChild(img);
     card.appendChild(description);
     card.appendChild(tag);
 
-    container.appendChild(card);
+    container.appendChild(link);
   });
 
   document.body.appendChild(container);

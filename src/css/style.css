@@ -12,6 +12,10 @@ body {
   font-family: Arial, sans-serif;
 }
 
+a{
+  text-decoration: none;
+}
+
 .arrow {
   color: #d9d9d9;
   position: absolute;
@@ -20,7 +24,7 @@ body {
   font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease opacity 0.1s ease;
   overflow: visible;
   user-select: none;
 }
@@ -63,7 +67,7 @@ img{
 
 .arrow.left:hover span {
   opacity: 1;
-  transform: translateX(-2%);
+  transform: translateX(-4%);
 }
 .arrow.right:hover span{
   opacity: 1;
@@ -77,6 +81,7 @@ img{
   justify-content: space-evenly;
   width: 80%;
   height: fit-content;
+  transform: translateX(-180vh);
 }
 
 .programming-card{
@@ -90,7 +95,6 @@ img{
   color: #d9d9d9;
   border: solid #d9d9d9;
   border-radius: 1rem;
-
 }
 
 .programming-card .title{
