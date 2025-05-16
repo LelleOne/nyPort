@@ -95,6 +95,10 @@ img{
   color: #d9d9d9;
   border: solid #d9d9d9;
   border-radius: 1rem;
+<<<<<<< HEAD
+=======
+  overflow: hidden;
+>>>>>>> 9149811e7460d329bbcc5140171abc64bba89a74
 }
 
 .programming-card .title{

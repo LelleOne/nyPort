@@ -12,9 +12,9 @@ const programmingObjects = [
     "js"
   ),
   createProgrammingObject(
-    "C++ Fundamentals",
-    "src/images/arrow_right.png",
-    "Master the fundamentals of C++ programming.",
+    "C++ OpenGL project",
+    "src/images/openGL.png",
+    "Learning how to create i simple OpenGL aplication",
     "c++"
   ),
   createProgrammingObject(
