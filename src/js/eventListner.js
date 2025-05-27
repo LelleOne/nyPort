@@ -96,6 +96,7 @@ rightArrow.addEventListener("mouseout", function () {
 
 mobileAbout.addEventListener("click", function () {
   if (mobileAboutActive == false){
+    programmingContainer.style.transition = "transform 0.5s ease";
     programmingContainer.classList.add("inactive-proj");
     aboutMe.classList.remove("inactive-about");
     aboutMe.classList.add("active-about");
@@ -103,11 +104,17 @@ mobileAbout.addEventListener("click", function () {
     mobileAbout.style.opacity = "0.8";
     mobileAboutActive = true;
     mobileProjActive = false;
+    aboutMe.style.removeProperty("transform");
+    programmingContainer.style.removeProperty("transform");
+    welcome.style.removeProperty("opacity");
+    rightArrow.style.removeProperty("opacity");
+    leftArrow.style.removeProperty("opacity");
   }
 });
 
 mobileProj.addEventListener("click", function () {
   if (mobileProjActive == false){
+    programmingContainer.style.transition = "transform 0.5s ease";
     programmingContainer.classList.remove("inactive-proj");
     aboutMe.classList.add("inactive-about");
     aboutMe.classList.remove("active-about");
@@ -115,5 +122,7 @@ mobileProj.addEventListener("click", function () {
     mobileAbout.style.opacity = "1";
     mobileAboutActive = false;
     mobileProjActive = true;
+    aboutMe.style.removeProperty("transform");
+    programmingContainer.style.removeProperty("transform");
   }
 });
