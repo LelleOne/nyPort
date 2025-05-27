@@ -1,0 +1,24 @@
+#myDropDown{
+    display: none;
+    z-index: 99;
+    background-color: #274258;
+    grid-row: 2;
+    grid-column: 1;
+    flex-direction: column;
+    border-radius: 0px 0px 360px 0px;
+    font-family: 'interregular', serif;
+    flex-direction: column;
+}
+
+#myDropDown a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: transparent;
+    grid-row: 2;
+    grid-column: 1;
+    text-align: center;
+    margin-top: 2vh;
+    font-family: 'interregular', serif;
+}

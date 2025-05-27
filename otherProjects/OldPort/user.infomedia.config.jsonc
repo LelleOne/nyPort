@@ -1,0 +1,20 @@
+{
+  "Projects": [
+    {
+      "DirectoryName": "BlockEstate",
+      "Name": "Block Estate",
+      "IsPublic": false,
+      "ShortDescription": "Minecraft Blueprint Market Place",
+      "LongDescription": "Här kan du \"köpa\", ladda upp och ladda ner blueprints ",
+      "CreationYear": 2024
+    },
+    {
+      "DirectoryName": "BlockShop",
+      "Name": "Block Estate",
+      "IsPublic": true,
+      "ShortDescription": "Minecraft Blueprint Market Place",
+      "LongDescription": "Här kan du \"köpa\", ladda upp och ladda ner blueprints ",
+      "CreationYear": 2024
+    }
+  ]
+}

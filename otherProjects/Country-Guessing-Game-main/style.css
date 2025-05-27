@@ -1,0 +1,30 @@
+html{
+    background-color: rgb(41, 41, 41);
+}
+
+body{
+    width: 50%;
+    max-width: 800px;
+    min-width: 480px;
+    margin: 0 auto;
+    margin-left: 40vw;
+}
+
+p{
+    user-select: none;
+    color: rgb(219, 219, 219);
+}
+
+label{
+    user-select: none;
+    color: rgb(219, 219, 219);
+}
+
+.Erm{
+    color:#5e5e5e;
+    padding: 3px;
+}
+
+h1{
+    color: rgb(219, 219, 219);
+}

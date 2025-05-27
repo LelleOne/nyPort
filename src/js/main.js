@@ -6,22 +6,25 @@ function createProgrammingObject(title, img, description, tag, link) {
 // Example objects
 const programmingObjects = [
   createProgrammingObject(
-    "JavaScript Basics",
-    "src/images/arrow_right.png",
-    "Learn the basics of JavaScript, the language of the web.",
-    "js"
+    "Country Guessing Game",
+    "src/images/world-map-continents-oceans.webp",
+    "Learn the basics of JavaScript, by creating a gamer where you guess the country",
+    "js",
+    "otherProjects/Country-Guessing-Game-main/index.html"
   ),
   createProgrammingObject(
     "C++ OpenGL project",
     "src/images/openGL.png",
     "Learning how to create i simple OpenGL aplication",
-    "c++"
+    "c++",
+    "https://github.com/LelleOne/OpenGL"
   ),
   createProgrammingObject(
-    "Python for Beginners",
-    "src/images/arrow_right.png",
+    "Old Portfolio",
+    "src/images/oldPort.png",
     "An introduction to Python programming for beginners.",
-    "python"
+    "web",
+    "otherProjects/OldPort/index.html"
   ),
   createProgrammingObject(
     "Minecraft Shop",
@@ -29,6 +32,13 @@ const programmingObjects = [
     "A shoping site for minecraft blueprints made with c# mvc .NET core.",
     "C#",
     "https://infomedia.orebro.se/xlihag29/BlockShop/"
+  ),
+  createProgrammingObject(
+    "Autumn Project",
+    "src/images/autmn.png",
+    "A project made with a friend where i use the knowledge from first port and helping others",
+    "web",
+    "otherProjects/AutmnProject/index.html"
   )
 ];
 
@@ -41,6 +51,7 @@ function displayProgrammingObjects(objects) {
 
     const link = document.createElement('a');
     link.href = obj.link;
+    link.target = "_blank"; 
     link.className = "link"
 
     const card = document.createElement('div');

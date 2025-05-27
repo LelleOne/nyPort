@@ -1,0 +1,72 @@
+html{
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'allerbold';
+    src: url('aller_bd-webfont.woff2') format('woff2'),
+         url('aller_bd-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url('356357.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#wrapper{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: calc(1 / 5 * 100%) calc(1 / 5 * 100%) calc(1 / 5 * 100%) calc(1 / 5 * 100%) calc(1 / 5 * 100%); 
+    grid-template-rows: calc((100vh - 72vh) / 2) 72vh calc((100vh - 72vh) / 2);
+}
+
+#osu{
+    display: flex;
+    grid-row: 2;
+    grid-column: 1 / 6;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+#circle{
+    display: flex;
+    height: 66vh;
+    width: 66vh;
+    border-radius: 50%;
+    background-color: #E867A0;
+    outline: solid white 6vh;
+    font-family: 'allerbold', serif;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 13vh;
+    user-select: none;
+}
+
+input{
+    z-index: 999;
+    display: none;
+    grid-row: 2;
+    grid-column: 1 / 6;
+    height: 66vh;
+    width: 66vh;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+input:checked ~ #osu{
+    grid-column: 1 / 4;
+}
+
+.socialLinks{
+    
+}

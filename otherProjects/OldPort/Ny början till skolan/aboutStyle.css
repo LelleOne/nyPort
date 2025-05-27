@@ -1,0 +1,66 @@
+hmtl{
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'optimusprincepsregular';
+    src: url('optimusprinceps-webfont.woff2') format('woff2'),
+         url('optimusprinceps-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
+         url('playfairdisplay-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    height: 100%;
+    background-color: rgb(20, 20, 20);
+}
+
+#wrapper{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(20, 5vh);
+}
+
+.rubrik{
+    z-index: 9999;
+    display: flex;
+    color: white;
+    font-family: 'optimusprincepsregular', serif;
+    grid-row: 9;
+    grid-column: 2 / 5;
+    font-size: 3vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.omMig{
+    z-index: 9999;
+    display: flex;
+    color: white;
+    font-family: 'playfair_displayregular';
+    grid-column: 2 / 5;
+    justify-content: center;
+    grid-row: 12 / 15;
+    font-size: 1.5vh;
+    align-items: top;
+    text-align: center;
+    background: linear-gradient(0deg, slateblue, slateblue) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
+}
+.omMig:hover{
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+
+}

@@ -1,0 +1,236 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;   
+}
+
+#wrapper{
+    display: grid;
+    grid-template-columns: 20vw 60vw 20vw;
+    grid-template-rows: 5vh;
+}
+
+@font-face {
+    font-family: 'interregular';
+    src: url('assets/inter-variablefont_slntwght-webfont.woff2') format('woff2'),
+         url('assets/inter-variablefont_slntwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#topBar{
+    display: flex;
+    grid-column: 1 / 4;
+    grid-row: 1;
+    height: 5vh;
+    background-color: #274258;
+    align-items: center;
+}
+
+#burgerMenue{
+    display: flex;
+    z-index: 999;
+    grid-row: 1;
+    grid-column: 1;
+    margin-left: 1vw;
+    height: 5vh;
+    width: 5vh;
+    opacity: 1;
+    user-select: none;
+    border: 1px solid #f00;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.nav div {
+    display: flex;
+    grid-row: 1;
+    grid-column: 1;
+    height: 0.8vh;
+    width: 4.9vh;
+    margin-bottom: 0.7vh;
+    z-index: 100;
+    background-color: whitesmoke;
+    flex-direction: row;
+    position: absolute;
+}
+
+.nav{
+    grid-row: 1;
+    grid-column: 1;
+    margin-left: 1vw;
+    position: absolute;
+    margin-top: 5px;
+    z-index: 100;
+}
+
+#smolLogo {
+    display: flex;
+    z-index: 100;
+    grid-row: 1;
+    grid-column: 2;
+    background-image: url('assets/placeholder.png'); 
+    background-size: cover; 
+    width: 4.9vh;
+    height: 4.9vh;
+    justify-self: center;
+    margin-top: 0.05vh;
+}
+
+
+#myDropDown{
+    display: flex;
+    z-index: 99;
+    background-color: rgba(39, 66, 88, 0.98);
+    grid-row: 2;
+    grid-column: 1;
+    flex-direction: column;
+    border-radius: 0px 0px 360px 0px;
+    font-family: 'interregular', serif;
+    flex-direction: column;
+    position: absolute;
+    width: 90vw;
+    height: 80vh;
+    top: 5vh;
+    left: -100%;
+    transition: left 400ms;
+}
+
+#myDropDown a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: transparent;
+    grid-row: 2;
+    grid-column: 1;
+    text-align: center;
+    margin-top: 1vh;
+    font-family: 'interregular', serif;
+    font-size: 2rem;
+    margin-top: 8vh;
+}
+
+#wrapperTwo{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 1vh 30vh 15vh 30vh 15vh 4vh;
+}
+
+#Lelle{
+    height: 30vh;
+    aspect-ratio: 1 / 1;
+    justify-self: center;
+    align-self: flex-start;
+    grid-row: 2;
+}
+
+#Gnome{
+    display: flex;
+    height: 30vh;
+    aspect-ratio: 1 / 1;
+    grid-column: 1;
+    grid-row: 4;
+    justify-self: center;
+    align-self: flex-start;
+}
+
+.about{
+    grid-row: 2;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#lelleText{
+    grid-row: 3;
+    grid-column: 1;
+}
+
+#gnomeText{
+    grid-row: 5;
+}
+
+@media only screen and (min-width: 1200px){
+
+    #myDropDown{
+        display: flex;
+        z-index: 99;
+        background-color: rgba(39, 66, 88, 0.98);
+        grid-row: 2;
+        grid-column: 1;
+        border-radius: 0;
+        font-family: 'interregular', serif;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 5vh;
+        left: -110%;
+        transition: left 400ms;
+    }
+
+    #myDropDown a{
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        background-color: transparent;
+        grid-row: 2;
+        grid-column: 1;
+        text-align: center;
+        margin-top: 2vh;
+        font-family: 'interregular', serif;
+        font-size: 3vh;
+        margin-top: 8vh;
+    }
+
+    #wrapper{
+        display: grid;
+        grid-template-columns: 20vw 60vw 20vw;
+        grid-template-rows: 5vh;
+    }
+
+    #wrapperTwo{
+        display: grid;
+        grid-template-columns: calc(1 / 2 * 100%) calc(1 / 2 * 100%);
+        grid-template-rows: 45vh 45vh 5vh;
+    }
+    
+    #Lelle{
+        height: 30vh;
+        aspect-ratio: 1 / 1;
+        justify-self: center;
+        align-self: flex-end;
+        grid-row: 1;
+        grid-column: 1;
+    }
+    
+    #Gnome{
+        display: flex;
+        height: 30vh;
+        aspect-ratio: 1 / 1;
+        grid-column: 2;
+        justify-self: center;
+        align-self: flex-end;
+        grid-row: 1;
+    }
+    
+    .about{
+        grid-row: 2;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #lelleText{
+        grid-row: 2;
+        grid-column: 1;
+    }
+    
+    #gnomeText{
+        grid-row: 2;
+        grid-column: 2;
+    }
+    
+}

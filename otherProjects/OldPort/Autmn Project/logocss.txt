@@ -1,0 +1,13 @@
+#logo{
+    display: flex;
+    z-index: 10;
+    grid-row: 2 / 4;
+    grid-column: 1/ 4;
+    background-image: url('assets/placeholder.png');
+    background-size: cover;
+    width: 45vw;
+    height: 45vw;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 8vh;
+}

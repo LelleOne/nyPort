@@ -1,0 +1,271 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;   
+    background-image: url("assets/CA2-Building-16.jpeg");
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'interregular';
+    src: url('assets/inter-variablefont_slntwght-webfont.woff2') format('woff2'),
+         url('assets/inter-variablefont_slntwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#wrapper{
+    display: grid;
+    grid-template-columns: 20vw 60vw 20vw;
+    grid-template-rows: 3.5rem;
+}
+
+@font-face {
+    font-family: 'interregular';
+    src: url('assets/inter-variablefont_slntwght-webfont.woff2') format('woff2'),
+         url('assets/inter-variablefont_slntwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#topBar{
+    display: flex;
+    grid-column: 1 / 4;
+    grid-row: 1;
+    height: 3.5rem;
+    background-color: #080B10;
+    align-items: center;
+}
+
+#burgerMenue{
+    display: flex;
+    z-index: 999;
+    grid-row: 1;
+    grid-column: 1;
+    margin-left: 1vw;
+    height: 5vh;
+    width: 5vh;
+    opacity: 1;
+    user-select: none;
+    border: 0px solid #f00;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.nav div {
+    display: flex;
+    grid-row: 1;
+    grid-column: 1;
+    height: 0.8vh;
+    width: 4.9vh;
+    margin-bottom: 0.7vh;
+    z-index: 100;
+    background-color: whitesmoke;
+    flex-direction: row;
+    position: absolute;
+}
+
+.nav{
+    grid-row: 1;
+    grid-column: 1;
+    margin-left: 1vw;
+    position: absolute;
+    margin-top: 5px;
+    z-index: 100;
+}
+
+#smolLogo {
+    display: flex;
+    z-index: 100;
+    grid-row: 1;
+    grid-column: 2;
+    background-image: url('https://playpaxdei.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F96ostmeapxb7%2F5gMPGFhSxvlwUzMBiHHAFc%2Fbbc3b2bee56bafc3a4671531312424ee%2FPaxDei_Monogram_4k_light.png%3Fw%3D1920&w=1920&q=100'); 
+    background-size: cover; 
+    width: 4.9vh;
+    height: 4.9vh;
+    justify-self: center;
+    margin-top: 0.3rem;
+}
+
+
+#myDropDown{
+    z-index: 99;
+    background-color: rgba(8, 11, 16, 0.96);
+    grid-row: 2;
+    grid-column: 1;
+    flex-direction: column;
+    font-family: 'interregular', serif;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 5vh;
+    left: -100%;
+    transition: left 400ms;
+}
+
+#myDropDown a{
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: transparent;
+    grid-row: 2;
+    grid-column: 1;
+    text-align: center;
+    font-family: 'interregular', serif;
+    font-size: 2rem;
+    margin-top: 8vh;
+}
+
+#wrapperTwo{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 1vh 30vh 15vh 30vh 15vh 4vh;
+}
+
+#Lelle{
+    height: 30vh;
+    aspect-ratio: 2048 / 1536;
+    justify-self: center;
+    align-self: flex-start;
+    grid-row: 2;
+    
+}
+
+#Gnome{
+    display: flex;
+    height: 30vh;
+    aspect-ratio: 4032 / 3024;
+    grid-column: 1;
+    grid-row: 4;
+    justify-self: center;
+    align-self: flex-start;
+}
+
+.about{
+    grid-row: 2;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'interregular';
+}
+
+#lelleText{
+    grid-row: 3;
+    grid-column: 1;
+}
+
+#gnomeText{
+    grid-row: 5;
+}
+
+.name{
+    display: none;
+    justify-self: center;
+    font-family: 'interregular';
+}
+
+.lellename{
+    grid-row: 3;
+}
+
+.gnomename{
+    grid-row: 5;
+}
+
+@media only screen and (min-width: 1200px){
+
+    #myDropDown{
+        display: flex;
+        z-index: 99;
+        grid-row: 2;
+        grid-column: 1;
+        border-radius: 0;
+        font-family: 'interregular', serif;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 5vh;
+        left: -110%;
+        transition: left 400ms;
+    }
+
+    #myDropDown a{
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        background-color: transparent;
+        grid-row: 2;
+        grid-column: 1;
+        text-align: center;
+        font-family: 'interregular', serif;
+        font-size: 3vh;
+        margin-top: 8vh;
+    }
+
+    #wrapper{
+        display: grid;
+        grid-template-columns: 20vw 60vw 20vw;
+        grid-template-rows: 5vh;
+    }
+
+    #wrapperTwo{
+        display: grid;
+        grid-template-columns: calc(1 / 2 * 100%) calc(1 / 2 * 100%);
+        grid-template-rows: 45vh 45vh 5vh;
+    }
+    
+    #Lelle{
+        height: 30vh;
+        justify-self: center;
+        align-self: flex-end;
+        grid-row: 1;
+        grid-column: 1;
+    }
+    
+    #Gnome{
+        display: flex;
+        height: 30vh;
+        grid-column: 2;
+        justify-self: center;
+        align-self: flex-end;
+        grid-row: 1;
+    }
+    
+    .about{
+        grid-row: 2;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    #lelleText{
+        grid-row: 2;
+        grid-column: 1;
+    }
+    
+    #gnomeText{
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    .name{
+        display: initial;
+    }
+
+    .lellename{
+        grid-row: 2;
+        grid-column: 1;
+    }
+    
+    .gnomename{
+        grid-row: 2;
+        grid-column: 2;
+    }
+    
+}
